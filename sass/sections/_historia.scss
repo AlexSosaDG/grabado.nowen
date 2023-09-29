@@ -1,0 +1,42 @@
+/*----------------------------------------- historia.html desde acá ------------------------
+------------------ class unificadas con _galeria.scss para los cuadros*/
+
+.historia {
+    color: $color_1;
+    margin-bottom: 2em;
+    p{
+        max-width: 75%;
+        margin: auto;
+        padding-bottom: 0.5em;
+    }
+    div{
+        text-align: center;
+        img{
+            width: 70%;
+            border: 0.1em solid $color_1;
+            padding: 0.5em;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+
+    .cuadros img {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 992px) {
+.cuadros img {
+    width: 300px;
+}
+
+.inicio_presente {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    margin: 0;
+    width: auto;
+}
+}

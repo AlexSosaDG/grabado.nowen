@@ -1,0 +1,94 @@
+/*----------------------------------------- novedades.html desde acá ----------------------------*/
+.publicacion {
+    background: linear-gradient($negro, $color_2);
+    text-align: center;
+    color: $color_1;
+
+    img {
+        display: block;
+        width: 70%;
+        padding-bottom: 1em;
+        margin: auto;
+    }
+
+    p {
+        text-align: left;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 2em;
+    }
+}
+
+.agenda_orden{
+    background: linear-gradient( $color_2, $color_4);
+    text-align: center;
+    h3 {
+        color: $negro;
+        padding: 0.4em;
+        margin: auto;
+        border-top: 0.1em solid $negro;
+        width: 25%;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    h4 {
+        border-bottom: 0.1em solid $color_2;
+    }
+    
+}
+
+
+.grid_agenda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2em 2em;
+    grid-template-areas:
+        "fecha_uno fecha_dos"
+        "fecha_tres fecha_cuatro"
+        "fecha_cinco fecha_Seis"
+        "fecha_siete fecha_ocho";
+        margin: 1em 1em 0 1em;
+        padding-bottom: 1em;
+}
+
+.bg_footer{
+    background: linear-gradient($color_4, $color_1);
+    div{
+        background-color: $color_2;
+    }
+    p{
+        color: $color_2;
+    }
+}
+
+@media (min-width: 650px) {
+
+    /*-------------------novedades----------*/
+    .grid_agenda {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+            "fecha_uno fecha_dos fecha_tres"
+            "fecha_cuatro fecha_cinco fecha_Seis"
+            "fecha_siete fecha_ocho ";
+    }
+}
+
+@media (min-width: 992px) {
+
+    .publicacion img {
+        width: 450px;
+    }
+
+    .grid_agenda {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "fecha_uno fecha_dos fecha_tres fecha_cuatro"
+            "fecha_cinco fecha_Seis fecha_siete fecha_ocho ";
+    }
+}

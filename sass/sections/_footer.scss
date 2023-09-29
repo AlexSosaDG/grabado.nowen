@@ -1,0 +1,21 @@
+footer {
+    background: linear-gradient( $color_2, $negro);
+    padding-bottom: 0.4em;
+    text-align: center;
+    
+    div{
+        width: 20%;
+        height: 0.1em;
+        background-color: $color_1;
+        margin: auto;
+    }
+
+    img {
+        text-align: center;
+        width: 25px;
+    }
+    p{
+        color: $color_1;
+        font-size: x-small;
+    }
+}

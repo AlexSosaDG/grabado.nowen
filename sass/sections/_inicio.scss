@@ -1,0 +1,201 @@
+/*texto principal*/
+.presentacion{
+    background-image: url("../../recursos/fondo_index.png");
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+    color: $color_5;
+
+    h1{
+        text-align:center;
+        font-size: 3em;
+        padding-top: 4.5em;
+    }
+    h2{
+        text-align: center;
+        font-size: 2em;
+    }
+}
+.fondos{
+    text-align: center;
+    background-color: $negro;
+        img{
+            width: 80%;
+        }
+}
+    .cuadros {
+        background-color: $negro;
+        padding-bottom: 2.2em;
+        padding-top: 2.5em;
+        
+        img {
+            display: block;
+            width: 65%;
+            margin: auto;
+        }
+    
+        ul {
+            margin-top: 2em;
+            margin: auto;
+    
+            h3 {
+                font-family: $t_cuadros;
+                color: $color_5;
+                text-align: center;
+                margin: auto;
+                padding-top: 0.6em;
+            }
+            p{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                color: $color_4;
+            }
+           
+        }
+        a{
+            text-decoration: none;
+            color: $color_5;
+            padding-left: 35%;
+        }
+    }
+    .detalle_cuadro{
+        font-size: small;
+        padding-top: 1em;
+        color: $color_4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+/*destacados*/
+.c_destacados {
+    background: linear-gradient( $negro, $color_2);
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1em;
+
+    h3 {
+        font-family: $subtitulos;
+        font-size: xx-large;
+        margin: auto;
+        color: $color_1;
+        width: 40%;
+        border-top: 0.1em solid $color_1;
+        padding-bottom: 0.1em;
+    }
+}
+
+
+.uno,
+.dos,
+.tres {
+    width: 70%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2em;
+    background-color: $color_1;
+    color: $color_4;
+    img{
+        width: 100%;
+    }
+    h6{
+        font-family: $t_cuadros;
+        padding-top: 0.5em;
+    }
+}
+
+.boton_u a{
+    text-decoration: none;
+    background-color: $color_1;
+    color: $color_4;
+    border-radius: 10%;
+    padding: 0.5em;
+}
+
+
+@media (min-width: 650px) {
+
+    .cuadros {
+        p {
+            width: 80%;
+            margin: auto;
+        }
+       
+    }
+
+    .detalle_cuadro {
+        padding-left: 10%;
+    }
+
+    .flex_destacados {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .flex_a {
+        width: 75%;
+    }
+
+    .uno {
+        width: 100%;
+    }
+
+    .flex_b {
+        width: 43%;
+    }
+
+    .dos,
+    .tres {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .cuadros {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin-top: 40px;
+
+        ul :not(.detalle_cuadro) {
+            width: 400px;
+        }
+
+        ul h3 {
+            text-align: left;
+        }
+
+        img {
+            width: 300px;
+            margin: 0;
+        }
+    }
+
+    .detalle_cuadro {
+        padding-left: 0;
+    }
+
+    .flex_destacados {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .flex_a,
+    .flex_b {
+        width: 300px;
+        margin: 0;
+    }
+
+    .b {
+        order: -1;
+    }
+}
