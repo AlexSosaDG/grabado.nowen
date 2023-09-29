@@ -120,10 +120,13 @@ footer p {
 }
 
 /*texto principal*/
-.presentacion {
-  background-image: url("../../recursos/fondo_index.png");
+.fondo_titulo {
+  background-image: url("../../recursos/foto_principal.png");
   background-size: cover;
   background-position: center;
+}
+
+.presentacion {
   height: 20em;
   color: #c64b40;
 }
