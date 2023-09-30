@@ -15,13 +15,15 @@
         margin-top: 1em;
         margin-bottom: 1em;
     }
-    h3{
-        text-align: center;
-        margin: auto;
-        border-top: 0.1em solid $color_1;
-        width: 40%;
-    }
+
     article{
+        margin-top: 1.5em;
+        h3{
+            text-align: center;
+            margin: auto;
+            border-top: 0.1em solid $color_1;
+            width: 40%;
+        }
         ul{
             margin-bottom: 0;
             padding-bottom: 1em;
@@ -59,31 +61,34 @@
 
     /*-------------------galedria----------*/
 
-    .galeria_cuadros {
-        width: 90%;
-        columns: 3 200px;
-        column-gap: 20px;
-        padding-bottom: 20px;
-    }
-
-    .galeria_cuadros li {
-        width: 90%;
-        margin-bottom: 5px;
-        margin-left: auto;
-    }
-
-    .galeria_cuadros li img {
-        width: 100%;
-    }
+    .main_galeria {
+        article{
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                width: 100%;
+                align-items: stretch;
+                li{
+                    width: 45%;
+                    margin: 0;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+}
 }
 
 @media (min-width: 992px) {
 
    
-    .galeria_cuadros {
-        width: 90%;
-        columns: 5 180px;
-        column-gap: 20px;
-        padding-bottom: 20px;
+    .main_galeria {
+        article{
+            ul{
+                li{
+                    width: 30%;
+                }
+            }
+        }
     }
 }

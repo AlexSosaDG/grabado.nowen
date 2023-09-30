@@ -1,7 +1,8 @@
 /*cambio del background-color del header */
 .bg-info{
-    background-color: rgba(241, 236, 236, 0.322)!important;
+    background-color: $color_1_trasparente !important;
 }
+
 
 .links_redes {
     display: flex;
@@ -15,9 +16,14 @@
         }
     }
 }
-
+.text-success{
+    color: $color_2!important;
+}
+.border-3{
+    background-color: $color_4;
+}
 .color_boton {
-    background-color: rgba(162, 209, 250, 0.158);
+    background-color: $color_1;
     justify-content: end;
 }
 .sticky-top{
@@ -71,10 +77,13 @@
     }
 
     .hover_boton_menu :hover {
-        color: #093528 !important;
+        color: $color_2 !important;
     }
 
     .hover_boton_u :hover {
         background-color: #093528;
+    }
+    .border-3{
+        background-color: $color_4_transparente;
     }
 }

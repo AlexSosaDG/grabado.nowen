@@ -23,10 +23,10 @@
     background: linear-gradient( $color_2, $color_4);
     text-align: center;
     h3 {
-        color: $negro;
+        color: $color_1;
         padding: 0.4em;
         margin: auto;
-        border-top: 0.1em solid $negro;
+        border-top: 0.1em solid $color_1_trasparente;
         width: 25%;
     }
     p {
@@ -40,6 +40,7 @@
 
 
 .grid_agenda {
+    border: 0.1em solid $color_4;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -79,9 +80,15 @@
 
 @media (min-width: 992px) {
 
-    .publicacion img {
+    .publicacion {
+        img {
         width: 450px;
     }
+    p{
+        width: 46%;
+    }
+    }
+
 
     .grid_agenda {
         grid-template-columns: 1fr 1fr 1fr 1fr;
