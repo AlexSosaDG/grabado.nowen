@@ -32,15 +32,15 @@ p {
 }
 
 /*cambio del background-color del header */
-.bg-info {
-  background-color: rgba(206, 107, 14, 0.4941176471) !important;
-}
-
 .links_redes {
   display: flex;
   justify-content: space-evenly;
-  width: 60%;
+  width: 100%;
   margin-top: 15px;
+  margin: auto;
+}
+.links_redes li {
+  width: 40%;
 }
 .links_redes li img {
   height: 23px;
@@ -55,8 +55,8 @@ p {
 }
 
 .color_boton {
-  background-color: #ce6b0e;
-  justify-content: end;
+  background-color: #ce6b0e !important;
+  justify-content: end !important;
 }
 
 .sticky-top {
@@ -69,12 +69,13 @@ p {
   margin: 0 !important;
 }
 
-.w-25 {
-  width: 40px !important;
+.container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  flex-wrap: nowrap !important;
 }
-
-.navbar-brand {
-  margin-right: 0 !important;
+.container-fluid a, .container-xxl a, .container-xl a, .container-lg a, .container-md a, .container-sm a {
+  width: auto;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .centrado-boton {
@@ -553,23 +554,24 @@ footer p {
 .formulario label {
   display: block;
 }
+.formulario input {
+  margin-bottom: 1em;
+}
 
 .mensaje {
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
   padding: 1em;
 }
 
-input {
-  margin-bottom: 1em;
-}
-
 .boton_enviar {
+  display: block;
   font-family: "Archivo Narrow", sans-serif;
   font-size: small;
   padding: 5px;
   border-radius: 7px;
   color: #ce6b0e;
+  margin-top: 1em;
 }
 
 @media (min-width: 992px) {

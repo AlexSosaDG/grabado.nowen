@@ -1,16 +1,16 @@
 /*cambio del background-color del header */
-.bg-info{
-    background-color: $color_1_trasparente !important;
-}
+
 
 
 .links_redes {
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 100%;
     margin-top: 15px;
+    margin: auto;
 
     li {
+        width: 40%;
         img {
             height: 23px;
         }
@@ -23,8 +23,8 @@
     background-color: $color_4;
 }
 .color_boton {
-    background-color: $color_1;
-    justify-content: end;
+    background-color: $color_1!important;
+    justify-content: end!important;
 }
 .sticky-top{
     position: sticky!important;
@@ -36,12 +36,15 @@
     margin: 0 !important;
 }
 
-.w-25 {
-    width: 40px !important;
-}
 
-.navbar-brand {
-    margin-right: 0 !important;
+
+.container-fluid{
+    flex-wrap: nowrap!important;
+    a{
+        width: auto;
+        padding: 0!important;
+        margin: 0!important;
+    }
 }
 
 .centrado-boton {

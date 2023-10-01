@@ -23,24 +23,26 @@
     label{
         display: block;
     }
+    input{
+        margin-bottom: 1em;
+    }
 }
 
 .mensaje {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
     padding: 1em;
 }
 
-input{
-    margin-bottom: 1em;
-}
-
 .boton_enviar {
+    display: block;
     font-family: $subtitulos;
     font-size: small;
     padding: 5px;
     border-radius: 7px;
     color: $color_1;
+    margin-top: 1em;
+
 }
 
 
