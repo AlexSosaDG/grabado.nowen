@@ -92,10 +92,6 @@ p {
   padding-right: 0.5em !important;
 }
 
-.text-warning {
-  color: #374a57 !important;
-}
-
 @media (min-width: 992px) {
   /*botones de redes alineados a la izquierda*/
   .botones-nav {
