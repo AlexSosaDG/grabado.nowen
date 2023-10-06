@@ -208,6 +208,7 @@ footer p {
   margin: auto;
   text-align: center;
   padding-bottom: 1em;
+  margin-left: 0;
 }
 .c_destacados h3, .c_destacados .h3 {
   font-family: "Archivo Narrow", sans-serif;
@@ -223,10 +224,9 @@ footer p {
 .dos,
 .tres {
   width: 70%;
+  margin: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0.2em;
   background-color: #ce6b0e;
   color: #d8d8d8;
@@ -245,6 +245,10 @@ footer p {
   padding-top: 0.5em;
 }
 
+.flex_destacados {
+  padding-left: 0;
+}
+
 .boton_u a {
   text-decoration: none;
   background-color: #ce6b0e;
@@ -261,7 +265,6 @@ footer p {
   .flex_destacados {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
     width: 100%;
     justify-content: space-evenly;
   }
@@ -441,6 +444,7 @@ footer p {
 .main_galeria article ul {
   margin-bottom: 0;
   padding-bottom: 1em;
+  padding-left: 0;
 }
 .main_galeria article ul li {
   border: 0.1em solid #ce6b0e;
